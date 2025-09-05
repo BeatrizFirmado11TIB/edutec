@@ -1,0 +1,326 @@
+@font-face {
+  font-family: 'Maharlika';
+  src: url('../../fonts/Maharlika-Regular.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Darker Grotesque', sans-serif;
+  color: #333;
+  background-color: #F7F7F7;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #f2f3eb;
+  padding: 1.25rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1002; 
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #314b2f;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #2e8b57;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  margin-right: auto;
+}
+
+.dropdown-menu { 
+display: none; 
+position: absolute; 
+top: 4.5rem;
+right: 2rem;
+background-color: 
+white;
+padding: 0.5rem 1rem; 
+border-radius: 1rem; 
+width: auto; 
+min-width: 180px; 
+box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15); 
+z-index: 1000; 
+} 
+
+.menu-grid {
+display: flex;
+flex-direction: column; 
+justify-content: flex-end;
+gap: 0.5rem;
+}
+
+.menu-grid a { 
+font-size: 1.375rem; 
+font-weight: 700; color: #000; 
+text-decoration: none; 
+} 
+
+.menu-grid a:hover {
+ text-decoration: underline; 
+}
+
+.hero {
+  background: url("../imagens/flora.jpg") center/cover no-repeat;
+  position: relative;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  text-align: left;
+}
+
+.hero__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.25);
+  backdrop-filter: blur(1.5px);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  padding-left: 4rem;
+  font-size: 1.4rem;
+}
+
+.hero__content h1 {
+  font-family: 'Maharlika', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.arrow-container {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.arrow-down {
+  background-color: #96470f;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.arrow-down svg path {
+  fill: white;
+}
+
+main {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.papel-flora {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.conteudo {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.texto-1 {
+  flex: 1.5;
+}
+
+.texto-1 h2 {
+  font-size: 2.5rem;
+  color: #4A7B2C;
+  margin-bottom: 20px;
+}
+
+.texto-1 p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.flora {
+  flex: 1;
+}
+
+.flora img {
+    max-width: 450px;
+    width: 100%;      
+    height: auto;     
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;   
+    }
+
+  .importancia {
+    background: #e5e7eb;
+    padding: 60px;
+    text-align: center;
+  }
+  
+  .importancia h2 {
+    font-size: 2rem;
+    color: #4A7B2C;
+    margin-bottom: 20px;
+  }
+  
+  .importancia p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: auto;
+    color: #333;
+  }
+
+
+
+  .plantas-nativas {
+    padding: 80px 60px;
+    background-color: #f9f9f9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    height: 100vh; /* Garante que o container ocupe toda a altura da tela */
+    margin-top: 100px; /* Adiciona um espaço para separar da seção acima */
+  }
+  
+  .plantas-nativas h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #14532d;
+  }
+  
+  .plantas-nativas p {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    color: #444;
+    font-size: 1.1rem;
+  }
+  
+  .conteudo-nativos {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .texto-nativos {
+    flex: 1.5;
+    margin-top: -40px; /* Ajuste para mover o texto para cima */
+    transform: translateX(-30px); /* Move o texto mais para a esquerda */
+    text-align: justify; /* Mantém o texto justificado */
+    padding: 0 20px; /* Adiciona um pouco de espaçamento nas laterais */
+    justify-content: center;
+    padding-top: 80px;
+  }
+  
+  .texto-nativos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #14532d;
+    text-align: left; /* Alinha o título à esquerda, para evitar o espaçamento extra */
+    word-spacing: normal; /* Garante que o título tenha o espaçamento normal entre as palavras */
+  }
+  
+  .texto-nativos p {
+    font-size: 1.3rem;
+    color: #444;
+    line-height: 1.6;
+    word-spacing: 0.5px; /* Ajusta o espaçamento das palavras para o parágrafo */
+  }
+
+  .grid-plantas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+    gap: 24px;
+    flex: 2;
+    margin-top: 40px; /* Espaço para separar o grid da seção de importância */
+    margin-bottom: 40px; /* Aumenta o espaço na parte inferior do grid */
+    transform: translateX(20px);
+    margin-left: 10px;
+  }
+  
+  .grid-plantas article {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;   /* garante que a imagem respeite o border-radius */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    padding: 0 0 16px; /* remove padding de cima */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grid-plantas article:hover {
+    transform: translateY(-8px);
+  }
+  
+  .grid-plantas img {
+    width: 100%;
+    height: 140px;   /* mantém a proporção mais compacta */
+    object-fit: cover;
+    border-radius: 12px 12px 0 0; /* só arredonda em cima */
+    display: block;
+  }
+  
+  .grid-plantas h2 {
+    font-size: 1.4rem; /* menor título */
+    margin: 12px 0 6px;
+    padding: 0 8px;
+    color: #14532d;
+  }
+  
+  .grid-plantas p {
+    font-size: 1rem;   /* menor descrição */
+    padding: 0 12px;
+    line-height: 1.3;
+  }
+
+  .grid-animais article:hover {
+    transform: translateY(-8px);
+  }
+
+
+  @media (max-width: 900px) {
+    .conteudo-nativos {
+      flex-direction: column;
+    }
+  }
