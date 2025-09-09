@@ -1,21 +1,12 @@
-@font-face {
-  font-family: 'Maharlika';
-  src: url('../../fonts/Maharlika-Regular.ttf') format('truetype');
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Darker Grotesque', sans-serif;
-  color: #333;
-  background-color: #F7F7F7;
-  line-height: 1.6;
-}
-
+header img{
+height: 2.875rem;
+} 
 header {
   background-color: #FCFDF6;
   padding: 0.5rem 2rem;
@@ -24,7 +15,7 @@ header {
   z-index: 1002; 
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.1);
 }
 
 header nav {
@@ -32,16 +23,13 @@ header nav {
   align-items: center;
   gap: 1.5rem;
 }
-header img{
-  height: 46px;
-}
 
 nav a {
   color: #314b2f;
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: 500;
-  margin-right: 40px;
+  margin-right: 2.5rem;
   transition: color 0.3s ease;
 }
 
@@ -55,36 +43,43 @@ nav .logo {
 }
 
 .dropdown-menu { 
-display: none; 
-position: absolute; 
-top: 4.5rem;
-right: 2rem;
-background-color: 
-white;
-padding: 0.5rem 1rem; 
-border-radius: 1rem; 
-width: auto; 
-min-width: 180px; 
-box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15); 
-z-index: 1000; 
+  display: none; 
+  position: absolute; 
+  top: 4.5rem;
+  right: 2rem;
+  background-color: white;
+  padding: 0.5rem 1rem; 
+  border-radius: 1rem; 
+  width: auto; 
+  min-width: 11.25rem; 
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15); 
+  z-index: 1000; 
 } 
 
 .menu-grid {
-display: flex;
-flex-direction: column; 
-justify-content: flex-end;
-gap: 0.5rem;
+  display: flex;
+  flex-direction: column; 
+  gap: 0.5rem;
 }
 
 .menu-grid a { 
-font-size: 1.375rem; 
-font-weight: 700; color: #000; 
-text-decoration: none; 
+  font-size: 1.375rem; 
+  font-weight: 700; 
+  color: #000; 
+  text-decoration: none; 
 } 
 
 .menu-grid a:hover {
- text-decoration: underline; 
+  text-decoration: underline; 
 }
+
+body {
+  font-family: 'Darker Grotesque', sans-serif;
+  color: #333;
+  background-color: #F7F7F7;
+  line-height: 1.6;
+}
+
 
 .hero {
   background: url("../imagens/flora.jpg") center/cover no-repeat;
@@ -225,8 +220,8 @@ main {
 
 .plantas-nativas {
   display: flex;
-  flex-direction: column; /* Altera para empilhar verticalmente */
-  gap: 40px; /* Espaço entre texto e cards */
+  flex-direction: column; 
+  gap: 40px; 
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -234,10 +229,10 @@ main {
 
 .texto-nativos {
   flex: 2.3;
-  margin-top: 40px; /* Ajuste para mover o texto para cima */
-  transform: none; /* Move o texto mais para a esquerda */
-  text-align: justify; /* Mantém o texto justificado */
-  padding: 0 30px; /* Adiciona um pouco de espaçamento nas laterais */
+  margin-top: 40px; 
+  transform: none; 
+  text-align: justify; 
+  padding: 0 30px; 
   justify-content: center;
   padding-top: 10px;
 }
@@ -264,11 +259,11 @@ main {
 
 .grid-plantas {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 34px;
   flex: 2;
-  margin-top: 20px; /* Espaço para separar o grid da seção de importância */
-  margin-bottom: 20px; /* Aumenta o espaço na parte inferior do grid */
+  margin-top: 20px; 
+  margin-bottom: 20px; 
   transform: translateX(20px);
   margin-left: 10px;
 }
@@ -276,11 +271,11 @@ main {
 .grid-plantas article {
   background: white;
   border-radius: 12px;
-  overflow: hidden;   /* garante que a imagem respeite o border-radius */
+  overflow: hidden;   
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   text-align: center;
-  padding: 0 0 6px; /* remove padding de cima */
+  padding: 0 0 6px; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -292,21 +287,21 @@ main {
 
 .grid-plantas img {
   width: 100%;
-  height: 140px;   /* mantém a proporção mais compacta */
+  height: 140px;   
   object-fit: cover;
-  border-radius: 12px 12px 0 0; /* só arredonda em cima */
+  border-radius: 12px 12px 0 0; 
   display: block;
 }
 
 .grid-plantas h2 {
-  font-size: 1.4rem; /* menor título */
+  font-size: 1.4rem; 
   margin: 12px 0 6px;
   padding: 0 8px;
   color: #14532d;
 }
 
 .grid-plantas p {
-  font-size: 1.2rem;   /* menor descrição */
+  font-size: 1.2rem;   
   padding: 0 12px;
   line-height: 1.3;
   margin-bottom: 8px;
