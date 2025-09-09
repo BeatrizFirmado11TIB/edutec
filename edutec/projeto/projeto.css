@@ -17,8 +17,8 @@ body {
 }
 
 header {
-  background-color: #f2f3eb;
-  padding: 1.25rem 2rem;
+  background-color: #FCFDF6;
+  padding: 0.5rem 2rem;
   position: sticky;
   top: 0;
   z-index: 1002; 
@@ -36,9 +36,13 @@ header nav {
 nav a {
   color: #314b2f;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 500;
+  margin-right: 40px;
   transition: color 0.3s ease;
+}
+header img{
+  height: 46px;
 }
 
 nav a:hover {
@@ -86,7 +90,7 @@ text-decoration: none;
     position: relative;
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,18 +112,21 @@ text-decoration: none;
     background-image: url('../imagens/projetos-intervencao.jpg');
     background-size: cover;
     background-position: center;
-    filter: blur(5px);
+    filter: blur(2px);
     z-index: -1;
   }
   
   .hero-content h1 {
     font-family: 'Maharlika', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: normal;
     font-size: 4rem;
     margin: 0;
   }
   
   .hero-content p {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   }
   
   .arrow-container {
@@ -147,7 +154,7 @@ text-decoration: none;
   
   .project-info {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
       padding: 50px;
       gap: 50px;
@@ -155,24 +162,34 @@ text-decoration: none;
   
   .project-text {
       max-width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
   }
   .project-text h2 {
-      font-size: 2rem;
-      color: #183410;
+      font-size: 2.3rem;
+      color: #304E2A;
       margin-bottom: 20px;
+      padding-top: 0;
+  }
+  .project-text p{
+    font-size: 1.4rem;
+     color: #000000;
   }
   
   .project-image img {
-      max-width: 100%;
+      max-width: 88%;
       border-radius: 20px;
+      height: auto;
+      padding-left: 63px;
   }
   
-  /* Intervention Projects Section */
   .intervention-projects {
       padding: 50px;
       text-align: center;
       position: relative;
       color: #304E2A;
+      z-index: 0;
       overflow: hidden;
   }
   
@@ -189,7 +206,9 @@ text-decoration: none;
   
   .intervention-projects h2 {
       color: #304E2A;
+      margin-top: -50px;
       margin-bottom: 40px;
+      font-size: 2.3rem;
   }
   
   .intervention-projects h2, .projects-container {
@@ -239,7 +258,7 @@ text-decoration: none;
   
   .project-card-content {
     padding: 0 20px 20px 20px;
-    color: #333;
+    color: #000000;
     flex-grow: 1; /* Permite que o conteúdo ocupe o máximo de espaço possível */
     display: flex;
     flex-direction: column;
@@ -247,14 +266,14 @@ text-decoration: none;
   }
   
   .project-card h3 {
-    color: #333;
+    color: #000000;
     font-weight: 700;
     font-size: 1.4rem;
     margin: 0;
   }
   
   .project-card p {
-    color: #333;
+    color: #000000;
     font-size: 1.5rem; /* Tamanho de texto ajustado */
     line-height: 1.4;
     font-style: normal;

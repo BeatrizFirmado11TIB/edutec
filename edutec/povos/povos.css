@@ -17,14 +17,18 @@
   }
   
   header {
-    background-color: #f2f3eb;
-    padding: 1.25rem 2rem;
+    background-color: #FCFDF6;
+    padding: 0.5rem 2rem;
     position: sticky;
     top: 0;
     z-index: 1002; 
     display: flex;
     flex-direction: column;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  header img{
+    height: 46px;
   }
   
   header nav {
@@ -36,8 +40,9 @@
   nav a {
     color: #314b2f;
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-weight: 500;
+    margin-right: 40px;
     transition: color 0.3s ease;
   }
   
@@ -48,9 +53,9 @@
   nav .logo {
     font-size: 1.5rem;
     margin-right: auto;
-}
+  }
   
-.dropdown-menu { 
+  .dropdown-menu { 
   display: none; 
   position: absolute; 
   top: 4.5rem;
@@ -63,37 +68,37 @@
   min-width: 180px; 
   box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15); 
   z-index: 1000; 
-} 
-
-.menu-grid {
+  } 
+  
+  .menu-grid {
   display: flex;
   flex-direction: column; 
   justify-content: flex-end;
   gap: 0.5rem;
-}
-
- .menu-grid a { 
+  }
+  
+  .menu-grid a { 
   font-size: 1.375rem; 
   font-weight: 700; color: #000; 
   text-decoration: none; 
-} 
+  } 
   
-.menu-grid a:hover {
+  .menu-grid a:hover {
    text-decoration: underline; 
-}
+  }
   
-.hero {
+  .hero {
     background: url("../imagens/Povos-e-comunidades.webp") center/cover no-repeat;
     position: relative;
-    height: 65vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     color: white;
     text-align: left;
-}
-
-.hero__overlay {
+  }
+  
+  .hero__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -101,31 +106,34 @@
     bottom: 0;
     background: rgba(0,0,0,0.25);
     backdrop-filter: blur(1.5px);
-}
-
-.hero__content {
+  }
+  
+  .hero__content {
     position: relative;
     z-index: 2;
     padding-left: 4rem;
     font-size: 1.4rem;
-}
-
-.hero__content h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  .hero__content h1 {
     font-family: 'Maharlika', sans-serif;
-    font-size: 3rem;
-    margin-bottom: 1rem;
     font-weight: normal;
-}
-
-.arrow-container {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  .hero__content p{
+    font-size: 1.6rem;
+  }
+  .arrow-container {
     position: absolute;
     bottom: -25px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
-}
-
-.arrow-down {
+  }
+  
+  .arrow-down {
     background-color: #96470f;
     width: 50px;
     height: 50px;
@@ -134,17 +142,18 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.arrow-down svg path {
+  }
+  
+  .arrow-down svg path {
     fill: white;
-}
-
-main {
+  }
+  
+  /* ===== MAIN ===== */
+  main {
     padding: 60px 20px;
     max-width: 1200px;
     margin: 0 auto;
-}
+  }
 
 .info-section {
     text-align: center;
@@ -152,16 +161,16 @@ main {
 }
 
 .info-section h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin-bottom: 1rem;
-    color: #2E2F35;
+    color: #754E11;
 }
 
 .info-section p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     max-width: 800px;
     margin: 0 auto;
-    color: #444;
+    color: #000000;
 }
 
 .cards-wrapper {
@@ -195,15 +204,16 @@ main {
 
 .card h3 {
     font-family: 'Maharlika', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 0.8rem;
-    color: #314b2f;
+    color: #754E11;
     font-weight: normal;
 }
 
 .card p {
-    font-size: 1.1rem;
-    color: #444;
+    font-size: 1.4rem;
+    color: #000000;
+    text-align: justify;
 }
 
 .card-2 {
@@ -229,15 +239,16 @@ main {
 
 .card-2 h3 {
     font-family: 'Maharlika', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 0.8rem;
-    color: #314b2f;
+    color: #754E11;
     font-weight: normal;
 }
 
 .card-2 p {
-    font-size: 1.1rem;
-    color: #444;
+    font-size: 1.4rem;
+    color: #000000;
+    text-align: justify;
 }
 
 .protecao {
@@ -251,42 +262,20 @@ main {
 .protecao h2 {
     font-size: 2rem;
     margin-bottom: 1.2rem;
-    font-family: 'Maharlika', sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
     color: #754E11;
-    font-weight: normal;
-
+    
 }
 
 .protecao {
     .p-protecao {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         max-width: 100%;
         margin: 0 auto;
         line-height: 1.7;
         background-color: #754E11;
+        padding: 1.6rem;
+        border-radius: 0.7rem;
     } 
 }
 
-@media (max-width: 768px) {
-    .hero {
-        height: 50vh;
-    }
-
-    .hero__content {
-        padding-left: 1.5rem;
-        font-size: 1rem;
-    }
-
-    .hero__content h1 {
-        font-size: 2rem;
-    }
-
-    .cards-wrapper {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        max-width: 90%;
-    }
-}

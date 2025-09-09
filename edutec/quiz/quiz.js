@@ -2,16 +2,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnConteudo = document.getElementById("btn-conteudo");
   const dropdownMenu = document.getElementById("dropdown-menu");
 
-  btnConteudo.addEventListener("click", function (e) {
-    e.preventDefault();
-    dropdownMenu.style.display =
-      dropdownMenu.style.display === "block" ? "none" : "block";
-  });
+  if (btnConteudo && dropdownMenu) {
+    btnConteudo.addEventListener("click", function (e) {
+      e.preventDefault();
+      dropdownMenu.style.display =
+        dropdownMenu.style.display === "block" ? "none" : "block";
+    });
+  }
 
- 
   document.addEventListener("click", function (e) {
     if (
+      dropdownMenu &&
       !dropdownMenu.contains(e.target) &&
+      btnConteudo &&
       !btnConteudo.contains(e.target)
     ) {
       dropdownMenu.style.display = "none";
@@ -19,34 +22,61 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+const temas = ['amazonia', 'igapo', 'savana', 'terra', 'varzea'];
 
-function toggleTopics() {
-  const topics = document.getElementById("ecoTopics");
-  const btn = document.querySelector(".toggle-btn");
-  
-  if (topics.style.display === "block") {
-    topics.style.display = "none";
-    btn.textContent = "+ Saiba mais";
+function getTemaAtualFromURL() {
+  const path = window.location.pathname;
+  const parts = path.split('/').filter(Boolean);
+  if (parts.length > 2 && parts[1] === 'quiz') {
+    return parts[2];
+  }
+  return '';
+}
+
+function criarOrdemAPartirDe(inicio) {
+  const idx = temas.indexOf(inicio);
+  if (idx === -1) return [...temas];
+  return [...temas.slice(idx), ...temas.slice(0, idx)];
+}
+
+function iniciarQuiz(temaEscolhido) {
+  const ordemQuiz = criarOrdemAPartirDe(temaEscolhido);
+  localStorage.setItem('ordemQuiz', JSON.stringify(ordemQuiz));
+  localStorage.setItem('temasCompletados', JSON.stringify([]));
+  localStorage.removeItem('temaRecemConcluido');
+  localStorage.setItem('temaInicial', temaEscolhido);
+  window.location.href = `/edutec/quiz/${temaEscolhido}/${temaEscolhido}-quiz.html`;
+}
+
+function finalizarQuizAtual() {
+  const temaAtual = getTemaAtualFromURL();
+  let temasCompletados = JSON.parse(localStorage.getItem('temasCompletados')) || [];
+  const ordemQuiz = JSON.parse(localStorage.getItem('ordemQuiz')) || [];
+
+  if (!temasCompletados.includes(temaAtual)) {
+    temasCompletados.push(temaAtual);
+    localStorage.setItem('temasCompletados', JSON.stringify(temasCompletados));
+  }
+
+  if (temasCompletados.length >= ordemQuiz.length) {
+    localStorage.clear();
+    window.location.href = '/edutec/quiz/finalizacao/todos-finalizados.html';
   } else {
-    topics.style.display = "block";
-    btn.textContent = "– Ocultar";
+    window.location.href = "/edutec/quiz/finalizacao/finalizado.html";
   }
 }
 
+function proximoQuiz() {
+  const ordemQuiz = JSON.parse(localStorage.getItem('ordemQuiz')) || [];
+  const temasCompletados = JSON.parse(localStorage.getItem('temasCompletados')) || [];
 
-const botoes = document.querySelectorAll(".opcoes button");
-const resultado = document.getElementById("resultado");
+  const proximoTema = ordemQuiz.find(t => !temasCompletados.includes(t));
 
-const correta = "Amazônica";
+  if (proximoTema) {
+    window.location.href = `/edutec/quiz/${proximoTema}/${proximoTema}-quiz.html`;
+  } else {
 
-botoes.forEach(botao => {
-  botao.addEventListener("click", () => {
-    if (botao.dataset.resposta === correta) {
-      resultado.textContent = "✅ Você acertou!";
-      resultado.style.color = "lightgreen";
-    } else {
-      resultado.textContent = "❌ Você errou! Tente novamente.";
-      resultado.style.color = "red";
-    }
-  });
-});
+    localStorage.clear();
+    window.location.href = '/edutec/quiz/finalizacao/todos-finalizados.html';
+  }
+}

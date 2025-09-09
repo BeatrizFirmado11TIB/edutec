@@ -15,10 +15,14 @@
     background-color: #F7F7F7;
     line-height: 1.6;
   }
+
+  header img{
+    height: 46px;
+  }
   
   header {
-    background-color: #f2f3eb;
-    padding: 1.25rem 2rem;
+    background-color: #FCFDF6;
+    padding: 0.5rem 2rem;
     position: sticky;
     top: 0;
     z-index: 1002; 
@@ -36,7 +40,8 @@
   nav a {
     color: #314b2f;
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
+    margin-right: 40px;
     font-weight: 500;
     transition: color 0.3s ease;
   }
@@ -85,7 +90,7 @@
 .hero {
     background: url("../imagens/varzea.jpg") center/cover no-repeat;
     position: relative;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -107,13 +112,18 @@
     position: relative;
     z-index: 2;
     padding-left: 4rem;
-    font-size: 1.4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .hero__content h1 {
     font-family: 'Maharlika', sans-serif;
-    font-size: 3rem;
+    font-weight: normal;
+    font-size: 4rem;
 }
+
+.hero__content p{
+    font-size: 1.6rem;
+  }
 
 .arrow-container {
     position: absolute;
@@ -165,15 +175,15 @@ main {
 }
 
 .text-content h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #2E2F35;
     margin-bottom: 20px;
 }
 
 .text-content p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     line-height: 1.6;
-    color: #333;
+    color: #000000;
     margin-bottom: 2rem;
 }
 
@@ -193,11 +203,11 @@ main {
 }
 
 .info-box-wrapper h3{
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 
 .info-box-wrapper p{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 .info-box {
@@ -221,23 +231,4 @@ main {
     flex: 2;
     display: flex;
     align-items: center;
-}
-
-@media (max-width: 768px) {
-    header nav {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .content-wrapper {
-        flex-direction: column;
-    }
-
-    .hero__content h1 {
-        font-size: 2rem;
-    }
-
-    .info-box {
-        flex-direction: column;
-    }
 }

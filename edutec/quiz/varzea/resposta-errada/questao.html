@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Quiz</title>
+  <title>Resposta Errada</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="amazonia.css"/>
-  <script src="../quiz.js"></script>
+  <link rel="stylesheet" href="questao.css" />
+  <script src="/edutec/script.js"></script>
+  <script src="questao.js" defer></script>
 </head>
 <body>
   <header>
     <nav>
-      <div class="logo">🌿</div>
-      <a href="#" id="btn-conteudo">Conteúdo</a>
-      <a href="/edutec/quiz/quiz.html">Jogo</a>
-      <a href="/edutec/sobrenos/sobrenos.html">Sobre nós</a>
+      <div class="logo"><img src="../imagens/Logo (1) (1).png" alt=""></div>
+      <a href="#" id="btn-conteudo"><strong>Conteúdo</strong></a>
+      <a href="/edutec/quiz/quiz.html"><strong>Jogo</strong></a>
+      <a href="/edutec/sobrenos/sobrenos.html"><strong>Sobre nós</strong></a>
     </nav>
     <div class="dropdown-menu" id="dropdown-menu">
       <section class="menu-grade">
@@ -32,13 +33,24 @@
           <a href="/edutec/terrafirme/terrafirme.html">Terra Firme</a>
           <a href="/edutec/varzea/varzea.html">Várzea</a>
         </div>
-  </section>
-  </div>
+      </section>
+    </div>
   </header>
 
-  <main class="tela-inicio">
-    <h1>Está preparado para iniciar<br>uma nova aventura?</h1>
-    <a href="./escolha-bioma.html/escolha.html" class="botao-jogar">Jogar</a>
+  <main class="container">
+    <h1 class="titulo">Questão errada!!</h1>
+
+    <div class="conteudo">
+      <div class="balao-container">
+        <div class="balao">Oh! Na próxima você consegue!</div>
+        <img src="../imagens/image 74 (2).png" alt="Tartaruga" class="tartaruga">
+      </div>
+
+      <div class="botoes">
+        <button class="botao proxima">Próxima</button>
+        <button class="botao voltar">Voltar</button>
+      </div>
+    </div>
   </main>
 </body>
 </html>
