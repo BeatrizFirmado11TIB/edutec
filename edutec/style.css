@@ -289,51 +289,71 @@ nav .logo {
   }
   .eco-cards {
     display: flex;
-    margin-top: 11rem;
-    gap: 1.875rem; 
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
-    padding: 40px;
+    gap: 2rem;
+    margin-top: 8rem;
+    position: relative;
+    padding: 2rem 1rem;
+  }
+  
+  .eco-cards::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    height: 8rem;
+    background-color: #355e35;
+    z-index: 0;
+    border-radius: 1rem;
   }
   
   .eco-card {
-    flex: 1;
-    min-width: 15.625rem; 
+    position: relative;
     background-color: white;
     border: 2px solid #2e4e2c;
-    padding: 3rem 6rem; 
-    border-radius: 0.5rem; 
-    position: relative;
-    box-shadow: 0 0.125rem 0.5rem rgba(0,0,0,0.03); 
+    border-radius: 0.5rem;
+    padding: 2rem 2rem;
+    flex: 1 1 280px;
+    z-index: 1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
   
   .eco-card .quote {
-    font-size: 5rem; 
+    font-size: 4rem;
     color: #2e4e2c;
     position: absolute;
-    top: 0.1rem; 
-    left: 0.9375rem; 
+    top: 0.3rem;
+    left: 1rem;
     font-family: serif;
+    line-height: 1;
   }
   
   .eco-card h3 {
-    font-family: 'Maharlika', sans-serif;
+    font-family: 'Playfair Display', serif; /* mais clássico para títulos */
     color: #2e4e2c;
-    font-size: 2.5rem; 
-    align-items: center;
+    font-size: 2.5rem;
     text-align: center;
-    font-weight: normal;
+    font-weight: 500;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
   }
   
   .eco-card p {
     font-size: 1.5rem;
-    color: #2e4e2c; 
+    color: #2e4e2c;
     line-height: 1.6;
-    margin-left: 0.9375rem; 
+    text-align: left;
   }
   
   .eco-card strong {
-    font-weight: 600;
+    font-weight: 700;
   }
   
   
@@ -593,7 +613,7 @@ body {
   width: 700px;
   height: 600px;
   display: block;
-  border: 6px solid #304E2A; /* Borda verde à esquerda */
+  border: 6px solid #304E2A; 
   border-radius: 1rem;
   margin-left: -163px;
   margin-top: 50px;
