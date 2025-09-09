@@ -98,7 +98,7 @@ body {
   right: 0;
   bottom: 0;
   background: rgba(0,0,0,0.25);
-  backdrop-filter: blur(1.5px);
+  backdrop-filter: blur(0.09375rem);
 }
 
 .hero__content {
@@ -106,7 +106,7 @@ body {
   z-index: 2;
   padding-left: 4rem;
   font-size: 1.4rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.8);
 }
 
 .hero__content h1 {
@@ -121,7 +121,7 @@ body {
 
 .arrow-container {
   position: absolute;
-  bottom: -25px;
+  bottom: -1.5625rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 3;
@@ -129,13 +129,13 @@ body {
 
 .arrow-down {
   background-color: #183410;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 .arrow-down svg path {
@@ -143,7 +143,7 @@ body {
 }
 
 .info-section {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
@@ -188,10 +188,10 @@ body {
 
 .image-content img {
   width: 100%;
-  max-width: 380px;
+  max-width: 23.75rem;
   height: auto;
-  border-radius: 12px;
-  border: 6px solid #304E2A;
+  border-radius: 0.75rem;
+  border: 0.375rem solid #304E2A;
   object-fit: cover;
 }
 
@@ -207,10 +207,10 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 1.2rem;
-  border: 2px solid #4b7b3e;
-  border-radius: 10px;
+  border: 0.125rem solid #4b7b3e;
+  border-radius: 0.625rem;
   background-color: #fdfdfb;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
 }
 
 .card p {

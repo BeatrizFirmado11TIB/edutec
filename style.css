@@ -102,7 +102,7 @@ nav .logo {
       position: relative;
       z-index: 2;
       max-width: 50rem;
-      padding-top: 12vh;
+      padding-top: 18vh;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     }
     
@@ -141,6 +141,7 @@ nav .logo {
       display: flex;
       justify-content: center;
       gap: 1.5rem;
+      background-color: #FFFFFF;
       padding: 0 1rem;
       background: transparent;
       font-family: 'Darker Grotesque', sans-serif;
@@ -151,9 +152,8 @@ nav .logo {
     
     .card {
       background-color: #FFFFFF;
-     
-      border-radius: 5px;
-      width: 280px;
+      border-radius: 10px;
+      width: 320px;
       height: 220px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       display: flex;
@@ -177,7 +177,6 @@ nav .logo {
     .card-icon svg {
       width: 30px;
       height: 30px;
-      margin-top: -1rem;
       margin-bottom: 2rem;
       padding: 20 0 0 0;
     }
@@ -292,7 +291,7 @@ nav .logo {
       transform: translateY(-50%);
       left: 0;
       width: 100%;
-      height: 12rem; /* faixa verde mais fina */
+      height: 12rem; 
       background-color: #4A6B32;
       z-index: 0;
     }
@@ -304,7 +303,7 @@ nav .logo {
       border-radius: 0.5rem;
       padding: 1.5rem 1.5rem;
       width: 280px;
-      height: 360px; /* altura maior => forma vertical */
+      height: 360px; 
       z-index: 1;
       box-shadow: 0 4px 10px rgba(0,0,0,0.04);
       display: flex;
@@ -572,6 +571,7 @@ nav .logo {
   
   .container-universo {
     display: flex;
+    
     max-width: 1200px;
     margin: 0 auto;
     gap: 40px;
@@ -587,6 +587,7 @@ nav .logo {
   
   .content-box {
     flex: 1;
+    m;
     display: flex;
     flex-direction: column;
   }
@@ -608,24 +609,19 @@ nav .logo {
   
   .bloco-wrapper {
     display: flex;
-    gap: 20px;
+   
     flex-wrap: wrap;
   }
   
-  .card {
-    flex: 1 1 280px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    background-color: #304E2A;
-  }
   
   .card.bloco-flora {
     background-color: #304E2A;
+    padding: 10px;
   }
   
   .card.bloco-fauna {
     background-color: #527737;
+    padding: 10px;
   }
   
   .topo-card {
@@ -662,14 +658,14 @@ nav .logo {
     margin: 0 auto;
     gap: 10px;
     background-color: #FFFFFF;
-    width: 100vw;         /* Faz ocupar toda a largura da janela */
-    box-sizing: border-box; /* Garante que padding será respeitado */
+    width: 100vw;        
+    box-sizing: border-box; 
   }
   
   .titulo-povos-comunidades {
     flex: 1;
     color: #333;
-    margin-top: 0; /* Remove espaço extra no topo */
+    margin-top: 0; 
   }
   
   .titulo-povos-comunidades h2 {
@@ -734,66 +730,66 @@ nav .logo {
     margin-top: -52px;
   }
   
- /* Seção principal */
-.curiosidades-flora-fauna {
-  background-color: #D1E8C1;
-  padding: 4rem 1rem;
-  text-align: center;
-  font-family: 'Darker Grotesque', sans-serif;
-}
-
-/* Título */
-.curiosidades-flora-fauna h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  color: #2E4E2C;
-  margin-bottom: 3rem;
-}
-
-/* Card branco arredondado */
-.curiosidades-flora-fauna .card {
-  background-color: #fff;
-  border-radius: 20px;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 37rem 33rem;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-}
-
-/* Linha que contém os itens */
-.curiosidades-flora-fauna .linha {
-  display: flex;
- 
-  gap: 2555rem;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-}
-
-/* Cada item individual */
-.curiosidades-flora-fauna .item {
-  flex: 1666rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-/* Ícones */
-.curiosidades-flora-fauna .item img {
-  width: 40px;
-  height: 40px;
-  margin-bottom: 1rem;
-}
-
-/* Título de cada item */
-.curiosidades-flora-fauna .item h3 {
-  font-size: 1.3rem;
-  color: #2E4E2C;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-/* Parágrafo */
-.curiosidades-flora-fauna .item p {
-  fon
-}
+  .curiosidades-flora-fauna {
+    background-color: #D1E8C1; /* verde clarinho de fundo */
+    padding: 4rem 1rem;
+    text-align: center;
+    font-family: 'Darker Grotesque', sans-serif;
+  }
+  
+  .curiosidades-flora-fauna h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #2E4E2C;
+    margin-bottom: 3rem;
+  }
+  
+  /* Card branco central */
+  .curiosidades-flora-fauna .cards {
+    background-color: #fff;
+    border-radius: 20px;
+    max-width: 1048px;
+    height: 919px;
+    margin: 0 auto;
+    padding: 5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Linha com 3 itens */
+  .curiosidades-flora-fauna .linha {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12rem;
+    margin-bottom: 10rem;
+  }
+  
+  /* Cada item */
+  .curiosidades-flora-fauna .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Ícones */
+  .curiosidades-flora-fauna .item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Título de cada item */
+  .curiosidades-flora-fauna .item h3 {
+    font-size: 1.8rem;
+    color: #2E4E2C;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Texto */
+  .curiosidades-flora-fauna .item p {
+    font-size: 1.3rem;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+  }

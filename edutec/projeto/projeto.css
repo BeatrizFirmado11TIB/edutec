@@ -106,13 +106,13 @@ body {
     background-image: url('../imagens/projetos-intervencao.jpg');
     background-size: cover;
     background-position: center;
-    filter: blur(2px);
+    filter: blur(0.125rem);
     z-index: -1;
   }
   
   .hero-content h1 {
     font-family: 'Maharlika', sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.8);
     font-weight: normal;
     font-size: 4rem;
     margin: 0;
@@ -120,12 +120,12 @@ body {
   
   .hero-content p {
     font-size: 1.6rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.8);
   }
   
   .arrow-container {
     position: absolute;
-    bottom: -25px;
+    bottom: -1.5625rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10; 
@@ -133,13 +133,13 @@ body {
   
   .arrow-down {
     background-color: #4A7B2C;
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
   }
   
   .arrow-down svg path {
@@ -150,8 +150,8 @@ body {
       display: flex;
       align-items: flex-start;
       justify-content: center;
-      padding: 50px;
-      gap: 50px;
+      padding: 3.125rem;
+      gap: 3.125rem;
   }
   
   .project-text {
@@ -163,7 +163,7 @@ body {
   .project-text h2 {
       font-size: 2.3rem;
       color: #304E2A;
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
       padding-top: 0;
   }
   .project-text p{
@@ -173,13 +173,13 @@ body {
   
   .project-image img {
       max-width: 88%;
-      border-radius: 20px;
+      border-radius: 1.25rem;
       height: auto;
-      padding-left: 63px;
+      padding-left: 3.9375rem;
   }
   
   .intervention-projects {
-      padding: 50px;
+      padding: 3.125rem;
       text-align: center;
       position: relative;
       color: #304E2A;
@@ -190,18 +190,18 @@ body {
   .intervention-projects::before {
       content: "";
       position: absolute;
-      top: 280px;
+      top: 17.5rem;
       left: 0;
       width: 100%;
-      height: 250px;
+      height: 15.625rem;
       background-color: #304E2A;
       z-index: 1;
   }
   
   .intervention-projects h2 {
       color: #304E2A;
-      margin-top: -50px;
-      margin-bottom: 40px;
+      margin-top: -3.125rem;
+      margin-bottom: 2.5rem;
       font-size: 2.3rem;
   }
   
@@ -213,36 +213,36 @@ body {
   .projects-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 1.875rem;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 1.25rem;
   }
   
   .project-card {
     background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    width: 340px;
+    border-radius: 0.9375rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.1);
+    width: 21.25rem;
     padding: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     height: 100%; 
-    min-height: 450px; 
+    min-height: 28.125rem; 
   }
   
   .project-card .img-container {
     width: 100%;
-    padding: 20px;
-    margin-bottom: 15px;
+    padding: 1.25rem;
+    margin-bottom: 0.9375rem;
     background-color: #FEFFF9;
   }
   .project-card .img-container-1 img{
-   height: 333px;
+   height: 20.8125rem;
   }
   .project-card .img-container-2 img{
-    height: 300px;
+    height: 18.75rem;
    }
   
   .project-card img {
@@ -251,7 +251,7 @@ body {
   }
   
   .project-card-content {
-    padding: 0 20px 20px 20px;
+    padding: 0 1.25rem 1.25rem 1.25rem;
     color: #000000;
     flex-grow: 1; 
     display: flex;
@@ -271,6 +271,6 @@ body {
     font-size: 1.5rem; 
     line-height: 1.4;
     font-style: normal;
-    margin: 5px 0;
+    margin: 0.3125rem 0;
     flex-grow: 1; 
   }
