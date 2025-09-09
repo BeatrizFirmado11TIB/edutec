@@ -225,10 +225,10 @@ fauna-animal {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    height: 100vh; /* Garante que o container ocupe toda a altura da tela */
-    margin-top: 100px; /* Adiciona um espaço para separar da seção acima */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin-top: 100px; 
   }
   
   .animais-nativos h2 {
@@ -246,18 +246,18 @@ fauna-animal {
   
   .conteudo-nativos {
     display: flex;
-    flex-direction: column; /* Altera para empilhar verticalmente */
-    gap: 20px; /* Espaço entre texto e cards */
+    flex-direction: column; 
+    gap: 20px; 
     max-width: 1200px;
     margin: 0 auto;
    }
   
   .texto-nativos {
     flex: 1;
-    margin-top: 40px; /* Ajuste para mover o texto para cima */
-    transform: none; /* Move o texto mais para a esquerda */
-    text-align: justify; /* Mantém o texto justificado */
-    padding: 0 30px; /* Adiciona um pouco de espaçamento nas laterais */
+    margin-top: 40px; 
+    transform: none; 
+    text-align: justify; 
+    padding: 0 30px; 
     justify-content: center;
     padding-top: 80px;
   }
@@ -295,11 +295,11 @@ fauna-animal {
   .grid-animais article {
     background: white;
     border-radius: 12px;
-    overflow: hidden;   /* garante que a imagem respeite o border-radius */
+    overflow: hidden;   
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     text-align: center;
-    padding: 0 0 6px; /* remove padding de cima */
+    padding: 0 0 6px; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -311,21 +311,21 @@ fauna-animal {
   
   .grid-animais img {
     width: 100%;
-    height: 140px;   /* mantém a proporção mais compacta */
+    height: 140px;   
     object-fit: cover;
-    border-radius: 12px 12px 0 0; /* só arredonda em cima */
+    border-radius: 12px 12px 0 0; 
     display: block;
   }
   
   .grid-animais h2 {
-    font-size: 1.4rem; /* menor título */
+    font-size: 1.4rem; 
     margin: 12px 0 6px;
     padding: 0 8px;
     color: #2E2F35;
   }
   
   .grid-animais p {
-    font-size: 1.2rem;   /* menor descrição */
+    font-size: 1.2rem;  
     padding: 0 12px;
     color: #000000;
     line-height: 1.3;

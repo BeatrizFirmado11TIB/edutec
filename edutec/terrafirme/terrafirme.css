@@ -207,7 +207,7 @@ main {
   }
   
   .card {
-    display: flex; /* Still using flex to arrange content within the card */
+    display: flex; 
     align-items:flex-end;
     justify-content: flex-start;
     gap: 45px;
@@ -217,28 +217,27 @@ main {
     background-color: #fdfdfb;
     color: #2f2f2f;
     font-size: 1rem;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    flex-wrap: wrap; 
     
   }
   
   
-  /* Target the paragraph in the first card */
   .cards .card:first-child p {
-    text-align: center; /* Align text to the left for the first card's paragraph */
-    padding-left: 0; /* Remove left padding */
-    margin-left: 0; /* Remove left margin */
+    text-align: center; 
+    padding-left: 0; 
+    margin-left: 0; 
   }
   .cards .card:nth-child(2) p {
-    text-align: center; /* Align text to the left for the second card's paragraph */
-    padding-right: 0; /* Remove left padding */
-    margin-right: 0; /* Remove left margin */
+    text-align: center; 
+    padding-right: 0; 
+    margin-right: 0;
   
   }
   .cards .card p {
-    margin-left: 5px; /* Diminui o espaço entre o ícone e o texto */
-    margin-right: 0; /* Remove qualquer margem à direita do ícone */
-    font-size: 1.3rem; /* Ajusta o tamanho do ícone */
-    color: #000000; /* Ajusta a cor do ícone */
+    margin-left: 5px; 
+    margin-right: 0; 
+    font-size: 1.3rem;
+    color: #000000; 
   }
   
   .card i {
