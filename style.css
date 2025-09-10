@@ -1,795 +1,839 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-header img{
-height: 2.875rem;
-} 
-header {
-  background-color: #FCFDF6;
-  padding: 0.5rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1002; 
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.1);
-}
-
-header nav {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-nav a {
-  color: #314b2f;
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-weight: 500;
-  margin-right: 2.5rem;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #2e8b57;
-}
-
-nav .logo {
-  font-size: 1.5rem;
-  margin-right: auto;
-}
-
-.dropdown-menu { 
-  display: none; 
-  position: absolute; 
-  top: 4.5rem;
-  right: 2rem;
-  background-color: white;
-  padding: 0.5rem 1rem; 
-  border-radius: 1rem; 
-  width: auto; 
-  min-width: 11.25rem; 
-  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15); 
-  z-index: 1000; 
-} 
-
-.menu-grid {
-  display: flex;
-  flex-direction: column; 
-  gap: 0.5rem;
-}
-
-.menu-grid a { 
-  font-size: 1.375rem; 
-  font-weight: 700; 
-  color: #000; 
-  text-decoration: none; 
-} 
-
-.menu-grid a:hover {
-  text-decoration: underline; 
-}
-    
-    .hero {
-      position: relative;
-      background: url(/edutec/imagens/Floresta\ \(1\).png) no-repeat center center;
-      background-size: cover;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      text-align: center;
-      color: white;
-      padding: 2rem;
-    }
-    
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.4);
-      z-index: 1;
-    }
-    
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      max-width: 50rem;
-      padding-top: 18vh;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    }
-    
-    .hero-content h1 {
-      font-family: 'Maharlika', sans-serif;
-      font-size: 4rem;
-      margin-bottom: 1rem;
-      line-height: 1.2;
-      font-weight: normal;
-    }
-    
-    .hero-content p {
-      font-size: 1.6rem;
-      margin-bottom: 2rem;
-      font-family: 'Darker Grotesque', sans-serif;
-    }
-    
-    .hero-content .btn {
-      background-color: #8AA649;
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 1rem;
-      font-size: 1.3rem;
-      font-family: 'Darker Grotesque', sans-serif;
-      text-decoration: none;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-    }
-    
-    .hero-content .btn:hover {
-      background-color: #88a685;
-    }
-    
-    .cards-info {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      background-color: #FFFFFF;
-      padding: 0 1rem;
-      background: transparent;
-      font-family: 'Darker Grotesque', sans-serif;
-      z-index: 2;
-      flex-wrap: wrap;
-      margin-top: 6rem;
-    }
-    
-    .card {
-      background-color: #FFFFFF;
-      border-radius: 10px;
-      width: 320px;
-      height: 220px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      transition: transform 0.3s ease;
-      padding: 0;
-    }
-    
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    
-    .card-content {
-      padding: 1.5rem 1rem 1rem 1rem;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    
-    .card-icon svg {
-      width: 30px;
-      height: 30px;
-      margin-bottom: 2rem;
-      padding: 20 0 0 0;
-    }
-    
-    .card h3 {
-      color: #242424;
-      font-size: 1.3rem;
-      font-weight: 600;
-      line-height: 1.2;
-      padding: 10px;
-      margin-top: -50px;
-    }
-    
-    .card > img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      margin-left: -30px;
-      padding: 0;
-      display: block;
-      border: 0;
-      position: relative;
-      min-width: 350px;
-  
-    }
-    
-    .ecosystem-section {
-      font-family: 'Darker Grotesque', sans-serif;
-      margin-top: 15rem;
-      background-color: #f8f8f2;
-      
-    }
-    
-    .ecosystem-top {
-      display: flex;
-      align-items: center;
-      gap: 2.5rem; 
-      flex-wrap: wrap;
-      margin-bottom: 3.75rem; 
-    }
-    
-    .eco-img-wrapper {
-      flex: 1;
-      position: relative;
-      max-width: 31.25rem; 
-    }
-    
-    .eco-img-wrapper::before {
-      content: '';
-      position: absolute;
-      top: 1.25rem; 
-      left: -1.25rem; 
-      width: 100%;
-      height: 100%;
-      background-color: #304c2c;
-      z-index: 0;
-      border-radius: 0.75rem; 
-    }
-    
-    .eco-img-wrapper img {
-      width: 100%;
-      height: auto;
-      border-radius: 0.75rem; 
-      position: relative;
-      z-index: 1;
-    }
-    
-    .eco-text {
-      flex: 1;
-      max-width: 37.5rem; 
-    }
-    
-    .eco-text h2 {
-      font-size: 2.5rem;
-      font-family: 'Maharlika', sans-serif;
-      color: #2e4e2c;
-      margin-bottom: 1.25rem; 
-      display: flex;
-      align-items: center;
-      gap: 0.625rem; 
-      font-weight: normal;
-    }
-    
-    .eco-text p {
-      font-size: 1.4rem; 
-      line-height: 1.6;
-      margin-bottom: 1rem; 
-    }
-    
-    .eco-text strong {
-      font-weight: 600;
-    }
-    .eco-text img{
-        width: 4rem; 
-        height: 4rem;
-    }
-    .eco-cards {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      gap: 4rem;
-      margin-top: 4rem;
-      position: relative;
-      padding: 2rem;
-    }
-    
-    .eco-cards::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 0;
-      width: 100%;
-      height: 12rem; 
-      background-color: #4A6B32;
-      z-index: 0;
-    }
-    
-    .eco-card {
-      position: relative;
-      background-color: white;
-      border: 2px solid #2e4e2c;
-      border-radius: 0.5rem;
-      padding: 1.5rem 1.5rem;
-      width: 280px;
-      height: 360px; 
-      z-index: 1;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.04);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      text-align: center;
-    }
-    
-    .eco-card .quote {
-      font-size: 4rem;
-      color: #2e4e2c;
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      font-family: serif;
-      line-height: 1;
-    }
-    
-    .eco-card h3 {
-      font-family: 'Maharlika', serif;
-      color: #2e4e2c;
-      font-size: 2.2rem;
-      font-weight: 500;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-    
-    .eco-card p {
-      font-size: 1.4rem;
-      color: #2e4e2c;
-      line-height: 1.4;
-    }
-    
-    .eco-card strong {
-      font-weight: 700;
-    }
-    
-    
-    
-    #floresta {
-      background-color: #f8f8f2;
-      padding: 5rem 0 5rem 2.5rem; 
-      font-family: 'Segoe UI', sans-serif;
-    }
-    
-    .container-floresta {
-      display: flex;
-      align-items: stretch;
-      justify-content: space-between;
-      max-width: none; 
-      margin: 0; 
-      gap: 3.75rem; 
-    }
-    
-    .texto-floresta {
-      flex: 1 1 34.375rem; 
-      color: #2e4a2b;
-    }
-    
-    .titulo-floresta {
-      display: flex;
-      align-items: center;
-      gap: 0.875rem; 
-      margin-bottom: 1.5rem; 
-    }
-    
-    .titulo-floresta h2 {
-      font-family: 'Maharlika',sans-serif;
-      font-size: 2.5rem; 
-      color: #2e4a2b;
-      font-weight: normal;
-    }
-    
-    .titulo-floresta img {
-      width: 4rem; 
-      height: 4rem;
-    }
-    
-    .texto-floresta p {
-      font-size: 1.4rem; 
-      font-family: 'Darker Grotesque',sans-serif;
-      line-height: 1.7;
-      margin-bottom: 1.25rem; 
-      color: #000000;
-    }
-    
-    .texto-floresta strong {
-      font-weight: bold;
-      color: #1e3923;
-    }
-    
-    .imagem-floresta {
-      flex: 1 1 24rem;
-      position: relative;
-      border-radius: 2.5rem 0 0 2.5rem; 
-      overflow: hidden;
-    }
-    
-    .imagem-floresta img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  
-  #vegetacao {
-      position: relative; 
-      padding: 40px 0 60px;
-      margin-top: 20px;
-      z-index: 1;
-  }
-  
-  .curve-top {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1; /* fica atrás dos cards */
-   
-    pointer-events: none;
-  }
-  
-  .curve-top svg {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-top: -20px;
-  }
-  
-  .vegetacao-content {
-      max-width: 1200px;
-;     z-index: 1;
-      padding: 0 40px;
-      text-align: center;
-      position: relative;
-      margin: 0 auto;
-
-  }
-  
-  .vegetacao-header h2 {
-    font-family: 'Maharlika', sans-serif;
-    margin-top: -180px;
-    z-index: 2; 
-    font-size: 3rem;
-    font-weight: normal;
-    margin-top: 2rem;
-    color: #FFFFFF;
-    margin-bottom: 30px;
-  }
-  
-  .vegetacao-header p {
-    font-family: 'Darker Grotesque', sans-serif;
-    z-index: 2; 
-    margin-top: -180px;
-    font-size: 1.5rem;
-    max-width: 600px;
-    margin: 0 auto 40px;
-    margin-top: -10px;
-    color: #FFFFFF;
-  }
-  
-  .vegetacao-cards {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-  }
-  
-  .vegetacao-card {
-    background-color: white;
-    border-radius: 20px;
-    overflow: hidden;
-    width: 250px;
-    color: #000;
-    text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-    position: relative;
-  }
-  
-  .vegetacao-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .card-image-wrapper {
-    position: relative;
-  }
-  
-  .vegetacao-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    display: block;
-  }
-  
-  .play-icon {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border-radius: 50%;
-    border: 2px solid #4A6B32;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s;
-  }
-  
-  .play-icon::after {
-    content: '';
-    width: 0;
-    height: 0;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-left: 12px solid #4A6B32;
-    margin-left: 4px;
-    transition: border-left-color 0.3s;
-  }
-  
-  .vegetacao-card:hover .play-icon {
-      background-color: #4A6B32;
-  }
-  
-  .vegetacao-card:hover .play-icon::after {
-      border-left-color: white;
-  }
-  
-  .card-content {
-    padding: 20px;
-    text-align: left;
-  }
-  
-  .card-content h3 {
-    font-family: 'Maharlika', sans-serif;
-    font-size: 2rem;
-    color: #4A6B32;
-    font-weight: normal;
-    margin: 0 0 10px 0;
-  }
-  
-  .card-content p {
-    font-size: 1.1rem;
-    font-family: 'Darker Grotesque', sans-serif;
-    line-height: 1.4;
-  }
-  
-  body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Darker Grotesque', sans-serif;
-    background-color: #f8f8f2;
   }
   
-  .fauna-flora {
-    background-color: #f8f8f2;
-    padding: 4rem 2rem;
-    font-family: 'Darker Grotesque', sans-serif;
-  }
-  
-  .container-universo {
-    display: flex;
-    
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 40px;
-    align-items: flex-start;
-  }
-  
-  .image-box img {
-    width: 520px;
-    height: 430px;
-    border: 6px solid #304E2A;
-    border-radius: 1rem;
-  }
-  
-  .content-box {
-    flex: 1;
-    m;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .texto-inicio h1 {
-    font-family: 'Maharlika', serif;
-    font-size: 3rem;
-    color: #304E2A;
-    font-weight: normal;
-    margin-bottom: 1rem;
-  }
-  
-  .texto-inicio p {
-    font-size: 1.4rem;
-    color: #183410;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-  }
-  
-  .bloco-wrapper {
-    display: flex;
-   
-    flex-wrap: wrap;
-  }
-  
-  
-  .card.bloco-flora {
-    background-color: #304E2A;
-    padding: 10px;
-  }
-  
-  .card.bloco-fauna {
-    background-color: #527737;
-    padding: 10px;
-  }
-  
-  .topo-card {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .topo-card img {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .topo-card h2 {
-    font-size: 2rem;
-    color: #FFFFFF;
-    margin: 0;
-  }
-  
-  .card p {
-    font-size: 1.2rem;
-    color: #FFFFFF;
-    line-height: 1.5;
-    margin: 0;
-  }
-  
-  .povos-e-comunidades {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 54px 80px 10px;
+  header img{
+  height: 2.875rem;
+  } 
 
-    margin: 0 auto;
-    gap: 10px;
-    background-color: #FFFFFF;
-    width: 100vw;        
-    box-sizing: border-box; 
-  }
-  
-  .titulo-povos-comunidades {
-    flex: 1;
-    color: #333;
-    margin-top: 0; 
-  }
-  
-  .titulo-povos-comunidades h2 {
-    font-family: 'Maharlika', sans-serif;
-    font-size: 2.8rem;
-    color: #8AA649;
-    font-weight: 400;
-    margin: 0;            /* remove todo espaço padrão */
-    line-height: 1.2;
-  }
-  
-  .titulo-povos-comunidades img {
-   height: 53px;
-   width: 53px;
-  }
-  
-  
-  .icone-comunidades {
-    width: 28px;
-    margin-left: 10px;
-    vertical-align: middle;
-  }
-  
-  .titulo-povos-comunidades p {
-    font-size: 1.5rem;              /* AUMENTADO */
-    line-height: 1.8;             /* MAIS ESPAÇAMENTO */
-    margin-top: 20px;
-    color: #000000;
-  }
-  
-  .titulo-povos-comunidades p strong {
-    font-weight: 600;
-    color: #000;
-  }
-  
-  .btn {
-    background-color: #8AA649;
-    color: white;
-    padding: 13px 23px;
-    border-radius: 30px;
-    font-weight: 600;
-    font-size: 17px;
-    margin-top: 20px;
-    display: inline-block;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    margin-bottom: 20px;
-  }
-  
-  .btn:hover {
-    background-color: #6e9942;
-  }
-  
-  .btn .seta {
-    margin-left: 11px;
-  }
-  
-  .imagem-cabana img {
-    max-width: 430px;
-    height: 411px;
-    margin-left: -380px; 
-    margin-top: -52px;
-  }
-  
-  .curiosidades-flora-fauna {
-    background-color: #D1E8C1; /* verde clarinho de fundo */
-    padding: 4rem 1rem;
-    text-align: center;
-    font-family: 'Darker Grotesque', sans-serif;
-  }
-  
-  .curiosidades-flora-fauna h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: #2E4E2C;
-    margin-bottom: 3rem;
-  }
-  
-  /* Card branco central */
-  .curiosidades-flora-fauna .cards {
-    background-color: #fff;
-    border-radius: 20px;
-    max-width: 1048px;
-    height: 919px;
-    margin: 0 auto;
-    padding: 5rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-  }
-  
-  /* Linha com 3 itens */
-  .curiosidades-flora-fauna .linha {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12rem;
-    margin-bottom: 10rem;
-  }
-  
-  /* Cada item */
-  .curiosidades-flora-fauna .item {
+  header {
+    background-color: #FCFDF6;
+    padding: 0.5rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1002; 
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.1);
+  }
+  
+  header nav {
+    display: flex;
     align-items: center;
-    text-align: center;
+    gap: 1.5rem;
   }
   
-  /* Ícones */
-  .curiosidades-flora-fauna .item img {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 1rem;
-  }
-  
-  /* Título de cada item */
-  .curiosidades-flora-fauna .item h3 {
-    font-size: 1.8rem;
-    color: #2E4E2C;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Texto */
-  .curiosidades-flora-fauna .item p {
+  nav a {
+    color: #314b2f;
+    text-decoration: none;
     font-size: 1.3rem;
-    color: #333;
-    line-height: 1.5;
-    margin: 0;
+    font-weight: 500;
+    margin-right: 2.5rem;
+    transition: color 0.3s ease;
   }
+  
+  nav a:hover {
+    color: #2e8b57;
+  }
+  
+  nav .logo {
+    font-size: 1.5rem;
+    margin-right: auto;
+  }
+  
+  .dropdown-menu { 
+    display: none; 
+    position: absolute; 
+    top: 4.5rem;
+    right: 2rem;
+    background-color: white;
+    padding: 0.5rem 1rem; 
+    border-radius: 1rem; 
+    width: auto; 
+    min-width: 11.25rem; 
+    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15); 
+    z-index: 1000; 
+  } 
+  
+  .menu-grid {
+    display: flex;
+    flex-direction: column; 
+    gap: 0.5rem;
+  }
+  
+  .menu-grid a { 
+    font-size: 1.375rem; 
+    font-weight: 700; 
+    color: #000; 
+    text-decoration: none; 
+  } 
+  
+  .menu-grid a:hover {
+    text-decoration: underline; 
+  }
+      
+      .hero {
+        position: relative;
+        background: url(/edutec/imagens/Floresta\ \(1\).png) no-repeat center center;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 2rem;
+      }
+      
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+      }
+      
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        max-width: 50rem;
+        padding-top: 18vh;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+      }
+      
+      .hero-content h1 {
+        font-family: 'Maharlika', sans-serif;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+        font-weight: normal;
+      }
+      
+      .hero-content p {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        font-family: 'Darker Grotesque', sans-serif;
+      }
+      
+      .hero-content .btn {
+        background-color: #507435;
+        color: white;
+        padding: 0.8rem 3rem;
+        border-radius: 1rem;
+        font-size: 1.4rem;
+        font-family: 'Darker Grotesque', sans-serif;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+      }
+      
+      .hero-content .btn:hover {
+        background-color: #88a685;
+      }
+      
+      .cardds-info {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: #FFFFFF;
+        padding: 0 1rem;
+        background: transparent;
+        font-family: 'Darker Grotesque', sans-serif;
+        z-index: 2;
+        flex-wrap: wrap;
+        margin-top: 6rem;
+      }
+      
+      .cardd {
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        width: 320px;
+        height: 220px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        padding: 0;
+      }
+      
+      .cardd:hover {
+        transform: translateY(-5px);
+      }
+      
+      .cardd-content {
+        padding: 1.5rem 1rem 1rem 1rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .cardd-icon svg {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 2rem;
+        padding: 20 0 0 0;
+      }
+      
+      .cardd h3 {
+        color: #242424;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 1.2;
+        padding: 10px;
+        margin-top: -50px;
+      }
+      
+      .cardd > img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        margin-left: -30px;
+        padding: 0;
+        display: block;
+        border: 0;
+        position: relative;
+        min-width: 350px;
+    
+      }
+      
+      .ecosystem-section {
+        font-family: 'Darker Grotesque', sans-serif;
+        margin-top: 15rem;
+        background-color: #f8f8f2;
+        
+      }
+      
+      .ecosystem-top {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem; 
+        flex-wrap: wrap;
+        margin-bottom: 3.75rem; 
+      }
+      
+      .eco-img-wrapper {
+        flex: 1;
+        position: relative;
+        max-width: 31.25rem; 
+      }
+      
+      .eco-img-wrapper::before {
+        content: '';
+        position: absolute;
+        top: 1.25rem; 
+        left: -1.25rem; 
+        width: 100%;
+        height: 100%;
+        background-color: #304c2c;
+        z-index: 0;
+        border-radius: 0.75rem; 
+      }
+      
+      .eco-img-wrapper img {
+        width: 100%;
+        height: auto;
+        border-radius: 0.75rem; 
+        position: relative;
+        z-index: 1;
+      }
+      
+      .eco-text {
+        flex: 1;
+        max-width: 37.5rem; 
+      }
+      
+      .eco-text h2 {
+        font-size: 2.5rem;
+        font-family: 'Maharlika', sans-serif;
+        color: #2e4e2c;
+        margin-bottom: 1.25rem; 
+        display: flex;
+        align-items: center;
+        gap: 0.625rem; 
+        font-weight: normal;
+      }
+      
+      .eco-text p {
+        font-size: 1.4rem; 
+        line-height: 1.6;
+        margin-bottom: 1rem; 
+      }
+      
+      .eco-text strong {
+        font-weight: 600;
+      }
+      .eco-text img{
+          width: 4rem; 
+          height: 4rem;
+      }
+      .eco-cards {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 4rem;
+        margin-top: 4rem;
+        position: relative;
+        padding: 2rem;
+      }
+      
+      .eco-cards::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+        height: 12rem; 
+        background-color: #4A6B32;
+        z-index: 0;
+      }
+      
+      .eco-card {
+        position: relative;
+        background-color: white;
+        border: 2px solid #2e4e2c;
+        border-radius: 0.5rem;
+        padding: 1.5rem 1.5rem;
+        width: 280px;
+        height: 360px; 
+        z-index: 1;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .eco-card .quote {
+        font-size: 4rem;
+        color: #2e4e2c;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        font-family: serif;
+        line-height: 1;
+      }
+      
+      .eco-card h3 {
+        font-family: 'Maharlika', serif;
+        color: #2e4e2c;
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+      
+      .eco-card p {
+        font-size: 1.4rem;
+        color: #2e4e2c;
+        line-height: 1.4;
+      }
+      
+      .eco-card strong {
+        font-weight: 700;
+      }
+      
+      
+      
+      #floresta {
+        background-color: #f8f8f2;
+        padding: 5rem 0 5rem 2.5rem; 
+        font-family: 'Segoe UI', sans-serif;
+      }
+      
+      .container-floresta {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        max-width: none; 
+        margin: 0; 
+        gap: 3.75rem; 
+      }
+      
+      .texto-floresta {
+        flex: 1 1 34.375rem; 
+        color: #2e4a2b;
+      }
+      
+      .titulo-floresta {
+        display: flex;
+        align-items: center;
+        gap: 0.875rem; 
+        margin-bottom: 1.5rem; 
+      }
+      
+      .titulo-floresta h2 {
+        font-family: 'Maharlika',sans-serif;
+        font-size: 2.5rem; 
+        color: #2e4a2b;
+        font-weight: normal;
+      }
+      
+      .titulo-floresta img {
+        width: 4rem; 
+        height: 4rem;
+      }
+      
+      .texto-floresta p {
+        font-size: 1.4rem; 
+        font-family: 'Darker Grotesque',sans-serif;
+        line-height: 1.7;
+        margin-bottom: 1.25rem; 
+        color: #000000;
+      }
+      
+      .texto-floresta strong {
+        font-weight: bold;
+        color: #1e3923;
+      }
+      
+      .imagem-floresta {
+        flex: 1 1 24rem;
+        position: relative;
+        border-radius: 2.5rem 0 0 2.5rem; 
+        overflow: hidden;
+      }
+      
+      .imagem-floresta img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+    #vegetacao {
+        position: relative; 
+        padding: 40px 0 60px;
+        margin-top: 20px;
+        z-index: 1;
+    }
+    
+    .curve-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;  
+     
+      pointer-events: none;
+    }
+    
+    .curve-top svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-top: -20px;
+    }
+    
+    .vegetacao-content {
+        max-width: 1200px;
+  ;     z-index: 1;
+        padding: 0 40px;
+        text-align: center;
+        position: relative;
+        margin: 0 auto;
+  
+    }
+    
+    .vegetacao-header h2 {
+      font-family: 'Maharlika', sans-serif;
+      margin-top: -180px;
+      z-index: 2; 
+      font-size: 3rem;
+      font-weight: normal;
+      margin-top: 2rem;
+      color: #FFFFFF;
+      margin-bottom: 30px;
+    }
+    
+    .vegetacao-header p {
+      font-family: 'Darker Grotesque', sans-serif;
+      z-index: 2; 
+      margin-top: -180px;
+      font-size: 1.5rem;
+      max-width: 600px;
+      margin: 0 auto 40px;
+      margin-top: -10px;
+      color: #FFFFFF;
+    }
+    
+    .vegetacao-cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    
+    .vegetacao-card {
+      background-color: white;
+      border-radius: 20px;
+      overflow: hidden;
+      width: 250px;
+      color: #000;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+    
+    .vegetacao-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .card-image-wrapper {
+      position: relative;
+    }
+    
+    .vegetacao-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+    }
+    
+    .play-icon {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+      background-color: white;
+      border-radius: 50%;
+      border: 2px solid #4A6B32;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s;
+    }
+    
+    .play-icon::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-left: 12px solid #4A6B32;
+      margin-left: 4px;
+      transition: border-left-color 0.3s;
+    }
+    
+    .vegetacao-card:hover .play-icon {
+        background-color: #4A6B32;
+    }
+    
+    .vegetacao-card:hover .play-icon::after {
+        border-left-color: white;
+    }
+    
+    .card-content {
+      padding: 20px;
+      text-align: left;
+    }
+    
+    .card-content h3 {
+      font-family: 'Maharlika', sans-serif;
+      font-size: 2rem;
+      color: #4A6B32;
+      font-weight: normal;
+      margin: 0 0 10px 0;
+    }
+    
+    .card-content p {
+      font-size: 1.1rem;
+      font-family: 'Darker Grotesque', sans-serif;
+      line-height: 1.4;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Darker Grotesque', sans-serif;
+      background-color: #f8f8f2;
+      overflow-x: hidden;  
+    }
+    
+    .fauna-flora {
+        background-color: #f8f8f2;
+        padding: 4rem 2rem;
+        font-family: 'Darker Grotesque', sans-serif;
+      }
+      
+      .container-universo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 40px;
+      }
+      
+      .image-box {
+        flex: 1 1 40%;
+        min-width: 300px;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .image-box img {
+        width: 100%;
+        max-width: 650px;
+        height: 444px;
+        border: 6px solid #304E2A;
+        border-radius: 1rem;
+        margin: 0;
+      }
+      
+     
+      .content-box {
+        flex: 1 1 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .texto-inicio h1 {
+        font-family: 'Maharlika', serif;
+        font-size: 2.8rem;
+        color: #304E2A;
+        font-weight: normal;
+        margin-bottom: 1rem;
+      }
+      
+      .texto-inicio p {
+        font-size: 1.4rem;
+        color: #304E2A;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+      }
+      
+      .bloco-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: flex-start;
+      }
+      
+      .card {
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        width: calc(50% - 10px);
+        min-width: 260px;
+        padding: 25px 20px;
+        color: white;
+        box-sizing: border-box;
+        text-decoration: none;
+      }
+      
+      .bloco-flora {
+        background-color: #304E2A;
+      }
+      
+      .bloco-fauna {
+        background-color: #527737;
+      }
+      
+      .topo-card {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+      
+      .topo-card img {
+        width: 60px;
+        height: 60px;
+      }
+
+      .topo-card a{
+        font-size: 1.4rem;
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+
+      .topo-card a:hover{
+        text-decoration: underline;
+      }
+      
+      .card p {
+        font-size: 1.3rem;
+        margin: 0;
+        line-height: 1.5;
+        color: #FFFFFF;
+      }
+      
+      @media (max-width: 768px) {
+        .container-universo {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+      
+        .bloco-wrapper {
+          justify-content: center;
+        }
+      
+        .card {
+          width: 100%;
+        }
+      
+        .texto-inicio h1 {
+          font-size: 2.2rem;
+        }
+      
+        .texto-inicio p {
+          font-size: 1rem;
+        }
+      }
+      
+    
+    .povos-e-comunidades {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 54px 80px 10px;
+      margin: 0 auto;
+      gap: 10px;
+      background-color: #FFFFFF;
+      width: 100vw;        
+      box-sizing: border-box; 
+    }
+    
+    .titulo-povos-comunidades {
+      flex: 1;
+      color: #333;
+      margin-top: 0; 
+    }
+    
+    .titulo-povos-comunidades h2 {
+      font-family: 'Maharlika', sans-serif;
+      font-size: 2.8rem;
+      color: #8AA649;
+      font-weight: 400;
+      margin: 0;           
+      line-height: 1.2;
+    }
+    
+    .titulo-povos-comunidades img {
+     height: 53px;
+     width: 53px;
+    }
+    
+    
+    .icone-comunidades {
+      width: 28px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    
+    .titulo-povos-comunidades p {
+      font-size: 1.5rem;             
+      line-height: 1.8;            
+      margin-top: 20px;
+      color: #000000;
+    }
+    
+    .titulo-povos-comunidades p strong {
+      font-weight: 600;
+      color: #000;
+    }
+    
+    .btn {
+      background-color: #8AA649;
+      color: white;
+      padding: 13px 23px;
+      border-radius: 30px;
+      font-weight: 600;
+      font-size: 17px;
+      margin-top: 20px;
+      display: inline-block;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      margin-bottom: 20px;
+    }
+    
+    .btn:hover {
+      background-color: #6e9942;
+    }
+    
+    .btn .seta {
+      margin-left: 11px;
+    }
+    
+    .imagem-cabana img {
+      max-width: 430px;
+      height: 411px;
+      margin-left: -380px; 
+      margin-top: -52px;
+    }
+    
+    .curiosidades-flora-fauna {
+      background-color: #D1E8C1;
+      padding: 4rem 1rem;
+      text-align: center;
+      font-family: 'Darker Grotesque', sans-serif;
+    }
+    
+    .curiosidades-flora-fauna h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #2E4E2C;
+      margin-bottom: 3rem;
+    }
+    
+    .curiosidades-flora-fauna .cards {
+      background-color: #fff;
+      border-radius: 20px;
+      max-width: 1048px;
+      height: 919px;
+      margin: 0 auto;
+      padding: 5rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    }
+    
+    .curiosidades-flora-fauna .linha {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12rem;
+      margin-bottom: 10rem;
+    }
+    
+    .curiosidades-flora-fauna .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .curiosidades-flora-fauna .item img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 1rem;
+    }
+    
+    .curiosidades-flora-fauna .item h3 {
+      font-size: 1.8rem;
+      color: #2E4E2C;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    
+    .curiosidades-flora-fauna .item p {
+      font-size: 1.3rem;
+      color: #333;
+      line-height: 1.5;
+      margin: 0;
+    }
