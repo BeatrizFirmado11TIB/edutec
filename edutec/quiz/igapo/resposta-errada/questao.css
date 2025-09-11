@@ -81,7 +81,7 @@ nav .logo {
 }
   body {
     font-family: 'Darker Grotesque', sans-serif;
-    background: linear-gradient(#115755, #3C7372);
+    background: url(/edutec/quiz/igapo/imagens/jogo\ igapo.png);
     color: white;
     min-height: 100vh;
   }

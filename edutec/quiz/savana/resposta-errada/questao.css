@@ -81,7 +81,7 @@ nav .logo {
 }
   body {
     font-family: 'Darker Grotesque', sans-serif;
-    background: linear-gradient(#645723, #B0854E);
+    background: url(/edutec/quiz/savana/imagens/jogo\ savana.png);
     color: white;
     min-height: 100vh;
   }

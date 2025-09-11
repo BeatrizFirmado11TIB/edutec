@@ -81,7 +81,7 @@ nav .logo {
 }
   body {
     font-family: 'Darker Grotesque', sans-serif;
-    background: linear-gradient(#304E2A, #4A6B32);
+    background: url(/edutec/quiz/terra/imagens/jogo\ terra.png);
     color: white;
     min-height: 100vh;
   }
