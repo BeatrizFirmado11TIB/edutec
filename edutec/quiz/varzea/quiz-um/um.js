@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   opcoes.forEach(opcao => {
     opcao.addEventListener('click', () => {
-      // Se já foi clicado, não faz nada
       if (clicado) {
         return;
       }

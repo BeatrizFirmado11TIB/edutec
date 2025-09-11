@@ -1,77 +1,81 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  header img{
-  height: 2.875rem;
-  } 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  header {
-    background-color: #FCFDF6;
-    padding: 0.5rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1002; 
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.1);
-  }
-  
-  header nav {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  
-  nav a {
-    color: #314b2f;
-    text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-right: 2.5rem;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #2e8b57;
-  }
-  
-  nav .logo {
-    font-size: 1.5rem;
-    margin-right: auto;
-  }
-  
-  .dropdown-menu { 
-    display: none; 
-    position: absolute; 
-    top: 4.5rem;
-    right: 2rem;
-    background-color: white;
-    padding: 0.5rem 1rem; 
-    border-radius: 1rem; 
-    width: auto; 
-    min-width: 11.25rem; 
-    box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15); 
-    z-index: 1000; 
-  } 
-  
-  .menu-grid {
-    display: flex;
-    flex-direction: column; 
-    gap: 0.5rem;
-  }
-  
-  .menu-grid a { 
-    font-size: 1.375rem; 
-    font-weight: 700; 
-    color: #000; 
-    text-decoration: none; 
-  } 
-  
-  .menu-grid a:hover {
-    text-decoration: underline; 
+header img{
+height: 2.875rem;
+} 
+
+header {
+  background-color: #FCFDF6;
+  padding: 0.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1002; 
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #314b2f;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-right: 2.5rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #2e8b57;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  margin-right: auto;
+}
+
+.dropdown-menu { 
+  display: none; 
+  position: absolute; 
+  top: 4.5rem;
+  right: 2rem;
+  background-color: white;
+  padding: 0.5rem 1rem; 
+  border-radius: 1rem; 
+  width: auto; 
+  min-width: 11.25rem; 
+  box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15); 
+  z-index: 1000; 
+} 
+
+.menu-grid {
+  display: flex;
+  flex-direction: column; 
+  gap: 0.5rem;
+}
+
+.menu-grid a { 
+  font-size: 1.375rem; 
+  font-weight: 700; 
+  color: #000; 
+  text-decoration: none; 
+} 
+
+.menu-grid a:hover {
+  text-decoration: underline; 
+}
+
+  section[id] {
+    scroll-margin-top: 3.2rem;
   }
       
       .hero {
@@ -104,7 +108,7 @@
         z-index: 2;
         max-width: 50rem;
         padding-top: 18vh;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.8);
       }
       
       .hero-content h1 {
@@ -153,10 +157,10 @@
       
       .cardd {
         background-color: #FFFFFF;
-        border-radius: 10px;
-        width: 320px;
-        height: 220px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 0.625rem;
+        width: 20rem;
+        height: 13.75rem;
+        box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
         overflow: hidden;
@@ -165,7 +169,7 @@
       }
       
       .cardd:hover {
-        transform: translateY(-5px);
+        transform: translateY(-0.3125rem);
       }
       
       .cardd-content {
@@ -176,10 +180,10 @@
       }
       
       .cardd-icon svg {
-        width: 30px;
-        height: 30px;
+        width: 1.875rem;
+        height: 1.875rem;
         margin-bottom: 2rem;
-        padding: 20 0 0 0;
+        padding: 1.25rem 0 0 0;
       }
       
       .cardd h3 {
@@ -187,26 +191,26 @@
         font-size: 1.3rem;
         font-weight: 600;
         line-height: 1.2;
-        padding: 10px;
-        margin-top: -50px;
+        padding: 0.625rem;
+        margin-top: -3.125rem;
       }
       
       .cardd > img {
         width: 100%;
-        height: 180px;
+        height: 11.25rem;
         object-fit: cover;
-        margin-left: -30px;
+        margin-left: -1.875rem;
         padding: 0;
         display: block;
         border: 0;
         position: relative;
-        min-width: 350px;
+        min-width: 21.875rem;
     
       }
       
       .ecosystem-section {
         font-family: 'Darker Grotesque', sans-serif;
-        margin-top: 15rem;
+        margin-top: 20rem;
         background-color: #f8f8f2;
         
       }
@@ -300,13 +304,13 @@
       .eco-card {
         position: relative;
         background-color: white;
-        border: 2px solid #2e4e2c;
+        border: 0.125rem solid #2e4e2c;
         border-radius: 0.5rem;
         padding: 1.5rem 1.5rem;
-        width: 280px;
-        height: 360px; 
+        width: 17.5rem;
+        height: 22.5rem; 
         z-index: 1;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+        box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.04);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -415,8 +419,8 @@
     
     #vegetacao {
         position: relative; 
-        padding: 40px 0 60px;
-        margin-top: 20px;
+        padding: 2.5rem 0 3.75rem;
+        margin-top: 1.25rem;
         z-index: 1;
     }
     
@@ -434,13 +438,13 @@
       display: block;
       width: 100%;
       height: auto;
-      margin-top: -20px;
+      margin-top: -1.25rem;
     }
     
     .vegetacao-content {
-        max-width: 1200px;
+        max-width: 75rem;
   ;     z-index: 1;
-        padding: 0 40px;
+        padding: 0 2.5rem;
         text-align: center;
         position: relative;
         margin: 0 auto;
@@ -449,47 +453,47 @@
     
     .vegetacao-header h2 {
       font-family: 'Maharlika', sans-serif;
-      margin-top: -180px;
+      margin-top: -11.25rem;
       z-index: 2; 
       font-size: 3rem;
       font-weight: normal;
       margin-top: 2rem;
       color: #FFFFFF;
-      margin-bottom: 30px;
+      margin-bottom: 1.875rem;
     }
     
     .vegetacao-header p {
       font-family: 'Darker Grotesque', sans-serif;
       z-index: 2; 
-      margin-top: -180px;
+      margin-top: -11.25rem;
       font-size: 1.5rem;
-      max-width: 600px;
-      margin: 0 auto 40px;
-      margin-top: -10px;
+      max-width: 37.5rem;
+      margin: 0 auto 2.5rem;
+      margin-top: -0.625rem;
       color: #FFFFFF;
     }
     
     .vegetacao-cards {
       display: flex;
       justify-content: center;
-      gap: 30px;
+      gap: 1.875rem;
       flex-wrap: wrap;
     }
     
     .vegetacao-card {
       background-color: white;
-      border-radius: 20px;
+      border-radius: 1.25rem;
       overflow: hidden;
-      width: 250px;
+      width: 15.625rem;
       color: #000;
       text-decoration: none;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
       position: relative;
     }
     
     .vegetacao-card:hover {
-      transform: translateY(-10px);
+      transform: translateY(-0.625rem);
     }
     
     .card-image-wrapper {
@@ -498,20 +502,20 @@
     
     .vegetacao-card img {
       width: 100%;
-      height: 150px;
+      height: 9.375rem;
       object-fit: cover;
       display: block;
     }
     
     .play-icon {
       position: absolute;
-      bottom: 10px;
-      right: 10px;
-      width: 40px;
-      height: 40px;
+      bottom: 0.625rem;
+      right: 0.625rem;
+      width: 2.5rem;
+      height: 2.5rem;
       background-color: white;
       border-radius: 50%;
-      border: 2px solid #4A6B32;
+      border: 0.125rem solid #4A6B32;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -522,10 +526,10 @@
       content: '';
       width: 0;
       height: 0;
-      border-top: 8px solid transparent;
-      border-bottom: 8px solid transparent;
-      border-left: 12px solid #4A6B32;
-      margin-left: 4px;
+      border-top: 0.5rem solid transparent;
+      border-bottom: 0.5rem solid transparent;
+      border-left: 0.75rem solid #4A6B32;
+      margin-left: 0.25rem;
       transition: border-left-color 0.3s;
     }
     
@@ -538,7 +542,7 @@
     }
     
     .card-content {
-      padding: 20px;
+      padding: 1.25rem;
       text-align: left;
     }
     
@@ -547,7 +551,7 @@
       font-size: 2rem;
       color: #4A6B32;
       font-weight: normal;
-      margin: 0 0 10px 0;
+      margin: 0 0 0.625rem 0;
     }
     
     .card-content p {
@@ -576,23 +580,23 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        max-width: 1200px;
+        max-width: 75rem;
         margin: 0 auto;
-        gap: 40px;
+        gap: 2.5rem;
       }
       
       .image-box {
         flex: 1 1 40%;
-        min-width: 300px;
+        min-width: 18.75rem;
         display: flex;
         justify-content: center;
       }
       
       .image-box img {
         width: 100%;
-        max-width: 650px;
-        height: 444px;
-        border: 6px solid #304E2A;
+        max-width: 40.625rem;
+        height: 27.75rem;
+        border: 0.375rem solid #304E2A;
         border-radius: 1rem;
         margin: 0;
       }
@@ -623,16 +627,16 @@
       .bloco-wrapper {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 1.25rem;
         justify-content: flex-start;
       }
       
       .card {
-        border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        width: calc(50% - 10px);
-        min-width: 260px;
-        padding: 25px 20px;
+        border-radius: 0.625rem;
+        box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+        width: calc(50% - 0.625rem);
+        min-width: 16.25rem;
+        padding: 1.5625rem 1.25rem;
         color: white;
         box-sizing: border-box;
         text-decoration: none;
@@ -649,13 +653,13 @@
       .topo-card {
         display: flex;
         align-items: center;
-        gap: 10px;
-        margin-bottom: 10px;
+        gap: 0.625rem;
+        margin-bottom: 0.625rem;
       }
       
       .topo-card img {
-        width: 60px;
-        height: 60px;
+        width: 3.75rem;
+        height: 3.75rem;
       }
 
       .topo-card a{
@@ -675,7 +679,7 @@
         color: #FFFFFF;
       }
       
-      @media (max-width: 768px) {
+      @media (max-width: 48rem) {
         .container-universo {
           flex-direction: column;
           align-items: center;
@@ -704,9 +708,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 54px 80px 10px;
+      padding: 3.375rem 5rem 0.625rem;
       margin: 0 auto;
-      gap: 10px;
+      gap: 0.625rem;
       background-color: #FFFFFF;
       width: 100vw;        
       box-sizing: border-box; 
@@ -728,21 +732,21 @@
     }
     
     .titulo-povos-comunidades img {
-     height: 53px;
-     width: 53px;
+     height: 3.3125rem;
+     width: 3.3125rem;
     }
     
     
     .icone-comunidades {
-      width: 28px;
-      margin-left: 10px;
+      width: 1.75rem;
+      margin-left: 0.625rem;
       vertical-align: middle;
     }
     
     .titulo-povos-comunidades p {
       font-size: 1.5rem;             
       line-height: 1.8;            
-      margin-top: 20px;
+      margin-top: 1.25rem;
       color: #000000;
     }
     
@@ -754,15 +758,15 @@
     .btn {
       background-color: #8AA649;
       color: white;
-      padding: 13px 23px;
-      border-radius: 30px;
+      padding: 0.8125rem 1.4375rem;
+      border-radius: 1.875rem;
       font-weight: 600;
-      font-size: 17px;
-      margin-top: 20px;
+      font-size: 1.0625rem;
+      margin-top: 1.25rem;
       display: inline-block;
       text-decoration: none;
       transition: background-color 0.3s ease;
-      margin-bottom: 20px;
+      margin-bottom: 1.25rem;
     }
     
     .btn:hover {
@@ -770,14 +774,14 @@
     }
     
     .btn .seta {
-      margin-left: 11px;
+      margin-left: 0.6875rem;
     }
     
     .imagem-cabana img {
-      max-width: 430px;
-      height: 411px;
-      margin-left: -380px; 
-      margin-top: -52px;
+      max-width: 26.875rem;
+      height: 25.6875rem;
+      margin-left: -23.75rem; 
+      margin-top: -3.25rem;
     }
     
     .curiosidades-flora-fauna {
@@ -796,12 +800,12 @@
     
     .curiosidades-flora-fauna .cards {
       background-color: #fff;
-      border-radius: 20px;
-      max-width: 1048px;
-      height: 919px;
+      border-radius: 1.25rem;
+      max-width: 65.5rem;
+      height: 57.4375rem;
       margin: 0 auto;
       padding: 5rem;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.08);
     }
     
     .curiosidades-flora-fauna .linha {
@@ -819,8 +823,8 @@
     }
     
     .curiosidades-flora-fauna .item img {
-      width: 40px;
-      height: 40px;
+      width: 2.5rem;
+      height: 2.5rem;
       margin-bottom: 1rem;
     }
     

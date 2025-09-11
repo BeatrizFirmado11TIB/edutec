@@ -99,7 +99,7 @@ body {
 .tela-inicio h1 {
   font-size: 3.5rem;
   margin-bottom: 2rem;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  text-shadow: 0.125rem 0.125rem 0.3125rem rgba(0,0,0,0.5);
 }
 
 .botao-jogar {
