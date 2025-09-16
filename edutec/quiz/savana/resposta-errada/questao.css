@@ -81,7 +81,7 @@ nav .logo {
 }
   body {
     font-family: 'Darker Grotesque', sans-serif;
-    background: url(/edutec/quiz/savana/imagens/jogo\ savana.png);
+    background: url(/edutec/quiz/savana/imagens/savana4.jfif);
     color: white;
     min-height: 100vh;
   }
@@ -91,12 +91,13 @@ nav .logo {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 11rem;
     padding: 1rem;
   }
   
   .titulo {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Darker Grotesque', serif;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.8);
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2rem;
@@ -155,7 +156,7 @@ nav .logo {
   }
   
   .botao {
-    background-color: #406930;
+    background-color: #754E11;
     color: white;
     border: none;
     border-radius: 1.25rem;

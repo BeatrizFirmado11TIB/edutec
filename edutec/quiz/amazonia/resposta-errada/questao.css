@@ -89,6 +89,7 @@ nav .logo {
   .container {
     display: flex;
     flex-direction: column;
+    margin-top: 11rem;
     align-items: center;
     text-align: center;
   }

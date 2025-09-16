@@ -76,20 +76,22 @@ nav .logo {
 
 body {
   font-family: 'Darker Grotesque', sans-serif;
-  background: linear-gradient(#645723, #B0854E);
   color: #fff;
   min-height: 100vh;
+  background: url(/edutec/quiz/savana/imagens/savana4.jfif);
+  color: #fff;
 }
 
 .quiz-container {
   max-width: 56.25rem;
-  margin: 0rem auto 1rem; 
+  margin: 11rem auto 1rem; 
   padding: 0 1rem;
   text-align: center;
 }
   
   .titulo {
     font-size: 2.5rem;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.8);
     margin-top: auto;    
     margin-bottom: 1rem;
    font-weight: 700;
@@ -102,7 +104,7 @@ body {
     padding: 1.25rem;
     max-width: 30rem;
     margin: 0 auto 2.5rem;
-    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.15);
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.5);
     font-size: 1.4rem;
     font-weight: 500;
   }
@@ -115,7 +117,7 @@ body {
   }
   
   .opcao {
-    background-color: #1a2b15;
+    background-color: rgba(227, 227, 227, 0.5);
     padding: 1rem;
     border-radius: 0.75rem;
     text-align: center;
@@ -134,7 +136,7 @@ body {
   
   .opcao p {
     font-size: 1.2rem;
-    color: #fff;
+    color: #000;
     font-weight: bold;
   }
   

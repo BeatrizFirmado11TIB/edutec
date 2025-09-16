@@ -9,7 +9,7 @@
     color: #fff;
     background: 
       linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-      url('../imgs/savana.jpg') no-repeat center center/cover;
+      url(/edutec/quiz/savana/imagens/savana4.jfif) no-repeat center center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -97,9 +97,9 @@
   }
   
   .tela-bioma h1 {
-    font-size: 2.5rem;
-    margin-bottom: 7rem;
-    background: rgba(190, 103, 4, 0.8);
+    font-size: 4rem;
+    margin-bottom: 3rem;
+   
     padding: 0.5rem 7rem;
     border-radius: 0.5rem;
   }

@@ -116,7 +116,7 @@ body {
 }
 
 .hero__content h1 {
-  font-family: 'Maharlika', sans-serif;
+  font-family: 'Maharlika', serif;
   font-weight: normal;
   font-size: 4rem;
   margin-bottom: 1rem;
@@ -219,7 +219,6 @@ fauna-animal {
 
   .animais-nativos {
     padding: 5rem 3.75rem;
-    background-color: #f9f9f9;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -257,14 +256,14 @@ fauna-animal {
     text-align: justify; 
     padding: 0 1.875rem; 
     justify-content: center;
-    padding-top: 5rem;
+    padding-top: 2rem;
   }
   
   .texto-nativos h2 {
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 2rem;
     margin-bottom: 1.875rem;
-    margin-top: 12.5rem;
+    margin-top: 1rem;
     color: #2E2F35;
     text-align: left; 
   }

@@ -78,7 +78,7 @@ nav .logo {
   text-decoration: underline; 
 }
 
-  section[id] {
+  section {
     scroll-margin-top: 3.2rem;
   }
       
@@ -116,15 +116,17 @@ nav .logo {
       }
       
       .hero-content h1 {
-        font-family: 'Maharlika', sans-serif;
+        font-family: 'Maharlika', serif;
         font-size: 4rem;
-        margin-bottom: 1rem;
+        margin-top: 6rem;
+        margin-bottom: 5rem;
         line-height: 1.2;
         font-weight: normal;
       }
       
       .hero-content p {
         font-size: 1.6rem;
+        margin-top: -3rem;
         margin-bottom: 2rem;
         font-family: 'Darker Grotesque', sans-serif;
       }
@@ -156,7 +158,7 @@ nav .logo {
         font-family: 'Darker Grotesque', sans-serif;
         z-index: 2;
         flex-wrap: wrap;
-        margin-top: 6rem;
+        margin-top: 9rem;
       }
       
       .cardd {
@@ -214,7 +216,7 @@ nav .logo {
 
       .ecosystem-section {
         font-family: 'Darker Grotesque', sans-serif;
-        margin-top: 17rem;
+        margin-top: 10rem;
         background-color: #f8f8f2;
         
       }
@@ -260,7 +262,7 @@ nav .logo {
       
       .eco-text h2 {
         font-size: 2.5rem;
-        font-family: 'Maharlika', sans-serif;
+        font-family: 'Maharlika', serif;
         color: #2e4e2c;
         margin-bottom: 1.25rem; 
         display: flex;
@@ -382,7 +384,7 @@ nav .logo {
       }
       
       .titulo-floresta h2 {
-        font-family: 'Maharlika',sans-serif;
+        font-family: 'Maharlika', serif;
         font-size: 2.5rem; 
         color: #2e4a2b;
         font-weight: normal;
@@ -457,7 +459,7 @@ nav .logo {
     }
     
     .vegetacao-header h2 {
-      font-family: 'Maharlika', sans-serif;
+      font-family: 'Maharlika', serif;
       margin-top: -11.25rem;
       z-index: 2; 
       font-size: 3rem;
@@ -552,7 +554,7 @@ nav .logo {
     }
     
     .card-content h3 {
-      font-family: 'Maharlika', sans-serif;
+      font-family: 'Maharlika', serif;
       font-size: 2rem;
       color: #4A6B32;
       font-weight: normal;
@@ -586,7 +588,7 @@ nav .logo {
         align-items: center;
         justify-content: center;
         max-width: 75rem;
-        margin: 0 auto;
+        margin: 7rem auto;
         gap: 2.5rem;
       }
       
@@ -760,7 +762,7 @@ nav .logo {
     }
     
     .titulo-povos-comunidades h2 {
-      font-family: 'Maharlika', sans-serif;
+      font-family: 'Maharlika', serif;
       font-size: 2.8rem;
       color: #8AA649;
       font-weight: 400;

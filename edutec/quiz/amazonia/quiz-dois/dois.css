@@ -84,6 +84,7 @@ body {
 .quiz-container {
   max-width: 56.25rem;
   margin: 0rem auto 1rem; 
+  margin-top: 11rem;
   padding: 0 1rem;
   text-align: center;
 }
