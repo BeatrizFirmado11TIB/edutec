@@ -81,7 +81,7 @@ nav .logo {
 }
   body {
     font-family: 'Darker Grotesque', sans-serif;
-    background: url(/edutec/quiz/terra/imagens/jogo\ terra.png);
+    background: url(/edutec/quiz/terra/imagens/25ab6dc0059a6df3f29455d8c65accce.jpg);
     color: white;
     min-height: 100vh;
   }
@@ -97,6 +97,7 @@ nav .logo {
   
   .titulo {
     font-family: 'Darker Grotesque', sans-serif;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.8);
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2rem;
@@ -113,13 +114,14 @@ nav .logo {
   
   .balao-container {
     display: flex;
+    margin-top: 3rem;
     flex-direction: column;
     align-items: flex-start;
     position: relative;
   }
   
   .balao {
-    background-color: #527737;
+    background-color: #304E2A;
     color: white;
     padding: 1rem 1.5rem;
     border-radius: 2rem;
@@ -139,11 +141,11 @@ nav .logo {
     height: 0;
     border-left: 0.9375rem solid transparent;
     border-right: 0.9375rem solid transparent;
-    border-top: 0.9375rem solid  #527737;
+    border-top: 0.9375rem solid  #304E2A;
   }
   
   .preguica {
-    width: 12rem;
+    width: 13rem;
     height: auto;
   }
   
@@ -154,7 +156,7 @@ nav .logo {
   }
   
   .botao {
-    background-color: #406930;
+    background-color: #304E2A;
     color: white;
     border: none;
     border-radius: 1.25rem;

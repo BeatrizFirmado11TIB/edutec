@@ -76,7 +76,7 @@ nav .logo {
 
 body {
   font-family: 'Darker Grotesque', sans-serif;
-  background: linear-gradient(#2C7D39, #3E7264);
+  background: url(/edutec/quiz/varzea/imagens/52eadc9ea7e90eaf813ea8a8aee32d1a.jpg);
   color: #fff;
   min-height: 100vh;
 }
@@ -92,6 +92,7 @@ body {
 .titulo {
   font-size: 2.5rem;
   font-weight: 700;
+  text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.8);
 }
 
 
@@ -117,7 +118,7 @@ body {
   padding: 1.5rem 1rem 1.7rem;
   max-width: 40rem;
   text-align: center;
-  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.15);
+  box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.5);
   font-size: 1.3rem;
   font-weight: 500;
   position: relative;

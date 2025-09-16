@@ -81,7 +81,7 @@ nav .logo {
 }
   body {
     font-family: 'Darker Grotesque', sans-serif;
-    background: url(/edutec/quiz/amazonia/imagens/jogo\ amazonia\ \(1\).png);
+    background: url(/edutec/quiz/amazonia/imagens/4e8ec376a1f587c358739ef3c233f253.jpg);
     color: white;
     min-height: 100vh;
   }
@@ -95,10 +95,11 @@ nav .logo {
   
   .titulo {
     font-family: 'Darker Grotesque', sans-serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 2rem;
-    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5);
+    margin-bottom: -1rem;
+    margin-top: 4rem;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.8);
   }
   
   .conteudo {
@@ -112,6 +113,7 @@ nav .logo {
   }
   
   .balao-container {
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -125,7 +127,7 @@ nav .logo {
     border-radius: 2rem;
     max-width: 15.625rem;
     text-align: center;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     margin-bottom: -0.625rem;
     position: relative;
   }
@@ -143,13 +145,14 @@ nav .logo {
   }
   
   .onca {
-    width: 8.75rem;
+    width: 11rem;
     height: auto;
   }
   
   .botoes {
     font-family: 'Darker Grotesque', sans-serif;
     display: flex;
+    margin-top: 6rem;
     flex-direction: column;
     gap: 1.5rem;
   }
@@ -160,7 +163,7 @@ nav .logo {
     border: none;
     border-radius: 1.25rem;
     padding: 0.8rem 2.5rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: bold;
     cursor: pointer;
     transition: background 0.3s ease;

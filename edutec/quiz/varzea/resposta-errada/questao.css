@@ -81,7 +81,7 @@ nav .logo {
 }
   body {
     font-family: 'Darker Grotesque', sans-serif;
-    background: url(/edutec/quiz/varzea/imagens/jogo\ amazonia\ \(3\).png);
+    background: url(/edutec/quiz/varzea/imagens/52eadc9ea7e90eaf813ea8a8aee32d1a.jpg);
     color: white;
     min-height: 100vh;
   }
@@ -99,6 +99,7 @@ nav .logo {
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 3rem;
     font-weight: bold;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.8);
     margin-bottom: 2rem;
   }
   
@@ -116,11 +117,12 @@ nav .logo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 4rem;
     position: relative;
   }
   
   .balao {
-    background-color: #72C038;
+    background-color: #054542;
     color: white;
     padding: 1rem 1.5rem;
     border-radius: 2rem;
@@ -140,22 +142,23 @@ nav .logo {
     height: 0;
     border-left: 0.9375rem solid transparent;
     border-right: 0.9375rem solid transparent;
-    border-top: 0.9375rem solid #72C038;
+    border-top: 0.9375rem solid #054542;
   }
   
   .tartaruga {
-    width: 10rem;
+    width: 13rem;
     height: auto;
   }
   
   .botoes {
     display: flex;
     flex-direction: column;
+    margin-top: 4rem;
     gap: 1.5rem;
   }
   
   .botao {
-    background-color: #406930;
+    background-color: #054542;
     color: white;
     border: none;
     border-radius: 1.25rem;

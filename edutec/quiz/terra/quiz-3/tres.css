@@ -76,7 +76,7 @@ nav .logo {
 
 body {
   font-family: 'Darker Grotesque', sans-serif;
-  background: linear-gradient(#304E2A, #4A6B32);
+  background: url(/edutec/quiz/terra/imagens/25ab6dc0059a6df3f29455d8c65accce.jpg);
   color: #fff;
   min-height: 100vh;
 }
@@ -92,6 +92,7 @@ body {
     font-size: 2.5rem;
     margin-top: auto;    
     margin-bottom: 1rem;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.8);
    font-weight: 700;
   }
   
@@ -102,7 +103,7 @@ body {
     padding: 1.25rem;
     max-width: 30rem;
     margin: 0 auto 2.5rem;
-    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.15);
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.5);
     font-size: 1.4rem;
     font-weight: 500;
   }
@@ -115,7 +116,7 @@ body {
   }
   
   .opcao {
-    background-color: #1a2b15;
+    background-color: rgba(227, 227, 227, 0.5);
     padding: 1rem;
     border-radius: 0.75rem;
     text-align: center;
@@ -133,8 +134,8 @@ body {
   }
   
   .opcao p {
-    font-size: 1.2rem;
-    color: #fff;
+    font-size: 1.3rem;
+    color: #000;
     font-weight: bold;
   }
   

@@ -81,7 +81,7 @@ nav .logo {
 }
   body {
     font-family: 'Darker Grotesque', sans-serif;
-    background: url(/edutec/quiz/igapo/imagens/jogo\ igapo.png);
+    background: url(/edutec/quiz/igapo/imagens/download\ \(6\).jpg);
     color: white;
     min-height: 100vh;
   }
@@ -97,6 +97,7 @@ nav .logo {
   
   .titulo {
     font-family: 'Darker Grotesque', sans-serif;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.8);
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2rem;
@@ -144,7 +145,7 @@ nav .logo {
   }
   
   .boto {
-    width: 8.75rem;
+    width: 9rem;
     height: auto;
   }
   
@@ -155,7 +156,7 @@ nav .logo {
   }
   
   .botao {
-    background-color: #406930;
+    background-color: #054542;
     color: white;
     border: none;
     border-radius: 1.25rem;

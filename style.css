@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Maharlika';
+  src: url('./fonts/Maharlika-Regular.ttf') format('truetype');
+}
 * {
   margin: 0;
   padding: 0;
@@ -207,7 +211,7 @@ nav .logo {
         min-width: 21.875rem;
     
       }
-      
+
       .ecosystem-section {
         font-family: 'Darker Grotesque', sans-serif;
         margin-top: 17rem;
@@ -815,3 +819,5 @@ nav .logo {
       margin-left: -23.75rem; 
       margin-top: -3.25rem;
     }
+
+    
